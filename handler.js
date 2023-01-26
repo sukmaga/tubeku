@@ -894,7 +894,7 @@ iqbl.sendMessage(m.chat, { video: { url: media[0].url }, fileName: `${title}.mp4
         }
     },
   async delete(m) {
-    let chat = global.db.data.chats[m.key.remoteJid]
+    let chat = global.db.data.chats[m.key]
     if (chat.delete) return
     await this.sendButton(m.key.remoteJid, `
 Terdeteksi @${m.participant.split`@`[0]} telah menghapus pesan
