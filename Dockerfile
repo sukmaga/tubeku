@@ -1,4 +1,4 @@
-FROM node:lts-buster
+node:lts-buster
 
 RUN apt-get update && \
   apt-get install -y \
@@ -10,7 +10,7 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN npm install && npm install qrcode-terminal && npm install pm2 -g 
+RUN npm install pm2 -g 
 
 COPY . .
 
