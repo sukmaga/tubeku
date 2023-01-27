@@ -132,7 +132,7 @@ async function connectionUpdate(update) {
   }
   if (global.db.data == null) await loadDatabase()
   console.log(JSON.stringify(update, null, 4))
-  if (update.receivedPendingNotifications) conn.sendMessage(`6285828357727@s.whatsapp.net`, {text: '♨︎𝒷ℴ𝓉 𝓉ℯ𝓁𝒶𝒽 𝒷ℯ𝓇𝒽𝒶𝓈𝒾𝓁 𝓉ℯ𝓇𝒽𝓊𝒷𝓊𝓃𝓰 𝒷𝒶𝓃𝓰 𝔸ℝ𝕀𝔼 𝕋𝕌𝔹𝔼' })
+ 
 }
 
 
