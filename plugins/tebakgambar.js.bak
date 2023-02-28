@@ -13,7 +13,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     let json = src[Math.floor(Math.random() * src.length)]
   // if (!json.status) throw json
   let caption = `
-Timeout *${(timeout / 1000).toFixed(2)} detik*
+Timeout *${(timeout / 1).toFixed(2)} detik*
 Ketik ${usedPrefix}hint untuk clue
 Bonus: ${poin} XP
 TiketCoin: 1 Tiketpoin
